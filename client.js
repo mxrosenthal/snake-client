@@ -15,18 +15,7 @@ const connect = function() {
   conn.on('connect', () => {
     conn.write('Name: MAX');
   });
-  // conn.on('connect', () => {
-  //   conn.write('Move: up');
-  // });
- 
-
-
-
-  // conn.on('data', (data) => {
-  //   console.log('Server says: ', data);
-  // });
-
-
+  
   return conn;
 }
 
