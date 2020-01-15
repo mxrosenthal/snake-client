@@ -1,4 +1,6 @@
 
+const {phrases, dir} = require('./constants');
+// const {dir} = require('./co')
 let connection; 
 
 const setupInput = function(conn) {
@@ -16,23 +18,24 @@ const handleUserInput = function(data) {
     console.log('Goodbye');
     process.exit();
   } else if (data === 'w') {
-    connection.write('Move: up');
+    connection.write(dir.w);
 
   }else if (data === 'a') {
-    connection.write('Move: left');
+    connection.write(dir.a);
 
   }else if (data === 's') {
-    connection.write('Move: down');
+    connection.write(dir.s);
 
   }else if (data === 'd') {
-    connection.write('Move: right');
-  }else if (data === 'q') {
-    connection.write('Say: qwertyuiopasdfghjk');
+    connection.write(dir.d);
+  }
+  else if (data === 'q') {
+    connection.write(phrases.q);
   }
   else if (data === 'e') {
-    connection.write('Say: Eat my tail!');
+    connection.write(phrases.e);
   }else if (data === 'r') {
-    connection.write('Say: Better than Vancouver');
+    connection.write(phrases.r);
   }
 
 }
