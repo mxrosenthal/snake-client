@@ -22,11 +22,19 @@ const handleUserInput = function(data) {
     connection.write('Move: left');
 
   }else if (data === 's') {
-    connection.write('Move: left');
+    connection.write('Move: down');
 
   }else if (data === 'd') {
     connection.write('Move: right');
+  }else if (data === 'q') {
+    connection.write('Say: qwertyuiopasdfghjk');
   }
+  else if (data === 'e') {
+    connection.write('Say: Eat my tail!');
+  }else if (data === 'r') {
+    connection.write('Say: Better than Vancouver');
+  }
+
 }
 
 module.exports = {
