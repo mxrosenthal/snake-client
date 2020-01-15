@@ -1,4 +1,4 @@
-const setupIput = function() {
+const setupInput = function() {
   console.log('stting up!');
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -15,5 +15,5 @@ const handleUserInput = function(data) {
 }
 
 module.exports = {
-  setupIput
+  setupInput
 };
